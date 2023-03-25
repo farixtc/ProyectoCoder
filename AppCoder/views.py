@@ -2,9 +2,13 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from AppCoder.models import Curso
 
+def cursos(request):
+    return render(request, 'index.html')
 
-def guardar_curso(request, camada):
-    curso = Curso(nombre= "Python", camada=camada)
-    curso.save()
-    return HttpResponse("usuario creado exitosamente")
+def estudiantes(request):
+    pass
+def profesores(request):
+    pass
+
+
 
